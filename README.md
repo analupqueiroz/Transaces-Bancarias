@@ -4,12 +4,12 @@ Este projeto desenvolve uma abordagem para identificar, pontuar e priorizar tran
 
 ---
 
-## 📌 Contexto do Problema
+##  Contexto do Problema
 O conjunto de dados bancários não possui uma variável alvo que indique previamente se uma transação foi fraude ou não. Por essa razão, a análise não utiliza aprendizado supervisionado tradicional; em vez disso, foca em **critérios objetivos de risco operacional e comportamental** para ranquear as movimentações que exigem revisão prioritária por analistas de segurança.
 
 ---
 
-## 📊 Base de Dados
+##  Base de Dados
 * **Fonte:** *Bank Transaction Dataset for Fraud Detection* (Kaggle)
 * **Licença:** Apache 2.0
 * **Volume:** 2.512 transações financeiras distribuídas entre 495 contas.
@@ -17,7 +17,7 @@ O conjunto de dados bancários não possui uma variável alvo que indique previa
 
 ---
 
-## ⚙️ Metodologia e Etapas do Projeto
+##  Metodologia e Etapas do Projeto
 
 ### 1. Limpeza e Preparação dos Dados
 * **Tratamento de Inconsistências:** A coluna `PreviousTransactionDate` continha datas posteriores à data da própria transação em 100% dos registros. Por ser um dado não confiável, a coluna foi descartada para evitar cálculos enviesados.
@@ -49,7 +49,7 @@ A pontuação final é dada pela soma dos sinais ativos (de 0 a 5), categorizada
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 * **Linguagem:** Python
 * **Bibliotecas:** 
   * `pandas` e `numpy` para análise estrutural, limpeza e métricas.
@@ -57,6 +57,6 @@ A pontuação final é dada pela soma dos sinais ativos (de 0 a 5), categorizada
 
 ---
 
-## 📁 Estrutura do Repositório
+##  Estrutura do Repositório
 * `transações_bancárias_em_2.ipynb`: Caderno com o código executado, limpeza, gráficos de exploração e tabela de priorização final.
 * `README.md`: Documentação e justificativas de negócio do projeto.
